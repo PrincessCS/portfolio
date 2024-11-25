@@ -1,13 +1,309 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+  font-family: 'Castoro', sans-serif;
 }
+
+/*nav styling*/
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  position: absolute;
+  top: 5%;
+  transform: translate(6%, 0);
+  width: 90%;
+  padding: 1.5em 2em;
+}
+
+.logo-name{
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+.nav-links ul li a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 2em;
+  opacity: 80%;
+}
+
+/*intro page styling*/
+
+.hero-container{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  position: relative;
+ 
+  
+
+}
+
+
+.hero-left, .hero-right{
+  width: 50%;
+}
+
+.hero-left{
+  padding-left: 5em;
+  margin-top: 15em;
+}
+
+.hero-left p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #C73E1D;
+  
+}
+
+.hero-left h2{
+  font-size: 4rem;
+  font-weight: 500;
+  word-break: normal;
+}
+
+.hero-left .hero-btns{
+  display: flex;
+  gap: 20px;
+}
+
+.hero-left .hero-btns .about{
+  background-color: #000;
+  color: #fff;
+ 
+}
+
+.hero-left .hero-btns .about:hover{
+  background-color: #C73E1D;
+  cursor: pointer;
+  border: none;
+  
+}
+
+.hero-left .hero-btns .contact{
+  background-color: transparent;
+}
+
+.hero-left .hero-btns .contact:hover{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-right img{
+  width: 100%;
+  height: auto;
+}
+
+.hero-right .hero-right-btns{
+  position: absolute;
+  top: 79%;
+
+}
+
+
+.hero-right-btns button{
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 20px 40px;
+
+}
+
+.hero-right-btns button:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.hero-social-icons{
+  position: absolute;
+  right: 1%;
+  top: 50%;
+}
+
+/*button styling*/
+.cta-btn{
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: 600;
+  padding: 20px 60px;
+  margin-top: 5em;
+  text-transform: uppercase;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+/*about styling*/
+.about-container{
+  position: relative;
+  padding: 2em;
+
+}
+
+.about-header{
+  text-align: left;
+
+}
+
+.about-header h1{
+  font-size: 10rem;
+  opacity: 10%;
+  position: relative;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.about-header h2{
+  position: absolute;
+  top: 15%;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.about-content{
+  margin-top: 5em;
+}
+
+.about-content p{
+  font-size: 1.7rem;
+}
+
+/*projects page styling*/
+
+.projects-container{
+  position: relative;
+  padding: 2em;
+}
+
+.projects-header{
+  text-align: left;
+
+}
+
+.projects-header h1{
+  font-size: 10rem;
+  opacity: 10%;
+  position: relative;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.projects-header h2{
+  position: absolute;
+  top: 35%;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+
+/*contact page styling*/
+.contact-container{
+  position: relative;
+  padding: 2em;
+  background-color: #000;
+}
+
+.contact-header{
+  text-align: left;
+
+}
+
+.contact-header h1{
+  font-size: 10rem;
+  color: #aaa;
+  opacity: 15%;
+  position: relative;
+  font-family: 'Public Sans', sans-serif;
+
+}
+
+.contact-header h2{
+  position: absolute;
+  top: 12%;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+.contact-flex-container{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: #fff;
+  margin-top: 5em;
+  padding: 2em;
+  padding-right: 5em;
+
+}
+
+.contact-left p{
+  font-size: 1.5rem;
+  line-height: 40px;
+  opacity: 60%;
+  
+  
+}
+
+.contact-center ul li{
+  list-style: none;
+  font-size: 1.2rem;
+  opacity: 60%;
+  margin-top: 1em;
+}
+
+.contact-right p{
+  font-size: 1.2rem;
+  opacity: 60%;
+  margin-top: 1em;
+}
+
+.contact-btns{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 2em;
+}
+
+.contact-btns button{
+  color: #fff;
+  padding: 30px 70px;
+  width: 100%;
+}
+
+.contact-btns .message{
+  background-color: #C73E1D;
+}
+
+.contact-btns .message:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.contact-btns .resume{
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.contact-btns .resume:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
